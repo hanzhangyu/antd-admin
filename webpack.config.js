@@ -39,7 +39,7 @@ module.exports = (webpackConfig, env) => {
         collapseWhitespace: true,
       } : null,
       hash: true,
-      headScripts: production ? null : ['/roadhog.dll.js'],
+      headScripts: production ? [] : ['/roadhog.dll.js'],
     }),
   ])
 
